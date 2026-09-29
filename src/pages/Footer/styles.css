@@ -1,0 +1,93 @@
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    
+}
+
+.footer p {
+    margin: 0;
+    color: black;
+    margin: 2rem;
+}
+
+.contact-link {
+    border-radius: 99px;
+    background-color: #007BfF;
+    font: white;
+}
+
+.footer label {
+    padding: 0;
+    color: black;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer a {
+    border-radius: 99px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: white;
+    color: rgb(85, 85, 85);
+    display: block;
+}
+
+.footer-bottom {
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Logo {
+    display: flex;
+    width: 63px;
+    height: 40px;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer-line { 
+    width: 100%;
+    border: 0;
+    border-top: 3px solid lightgray;
+    box-shadow: 0 0 3px rgba(211, 211, 211, 0.4);
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.youtube-icon {
+    display: inline-flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    color: rgb(85, 85, 85);
+    border-color: rgb(85, 85, 85);
+    border-radius: 50%;
+    border: 1px solid currentColor;
+}
