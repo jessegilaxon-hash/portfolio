@@ -3,12 +3,22 @@ import heroImg from '../../assets/hero.png'
 import reactLogo from '../../assets/react.svg'
 import viteLogo from '../../assets/vite.svg'
 import './App.css'
+import Hero from '../../components/WPHero'
+
+const paragraphStyles = {
+  color:'blue',
+  fontSize:'3px',
+  fontWeight:'bold',
+  display:'inline-block' 
+ 
+};
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Hero></Hero>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -17,7 +27,8 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
-          <p>
+          <h3 className='flex justify center items-center text-x1 font-semibold uppercase border rounded-full py-2 px-4 hover:bg-blue-200 hover:px-16 lg:bg-transparent bg-[Steelblue]'>with TailwindCSS</h3>
+          <p style={paragraphStyles}>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
         </div>

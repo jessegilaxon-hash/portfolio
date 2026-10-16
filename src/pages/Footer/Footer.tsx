@@ -1,21 +1,24 @@
-// import Hyperlink from "../Hyperlink/Hyperlink";
-import "./styles.css";
+import Hyperlink from "../../components/Hyperlink/Hyperlink";
+
 
 function Footer() {
   return (
-    <footer className="footer">
-      <p>UPSKILL FOR A BETTER FUTURE</p>
-      <label>Request More Information</label>
-      <p>
-        Lift Media, LLC is a clinical stage healthcare company which is
-        devloping a unique.
+    <footer className="footer flex flex-col items-center justify-around min-h pt-2 font-sans text-black text-center m-5">
+      <p className="m-5 text-gray-500">UPSKILL FOR A BETTER FUTURE
       </p>
-      <div className="contact-link">
-      {/* <Hyperlink url="https://example.com" linkText="Contact Us" /> */}
-      </div>
-      <p>© 2019 Lift Media, LLC</p>
-      <hr className="footer-line" />
-      <div className="footer-bottom">
+      <span className="text-4xl m-5 font-times">Request More Information</span>
+      <p className="">
+      Lift Media, LLC is a clinical stage healthcare company which is devloping a unique.
+      </p>
+        <a
+          className="m-5 inline-flex rounded-full bg-blue-500 px-4 py-2 text-white no-underline"
+          href="https://example.com"
+        >
+          Contact Us
+        </a>
+       <p className="m-5">© 2019 Lift Media, LLC</p>
+      <hr className="my-6 w-full border-b-gray-300" />
+      <div className="footer-bottom grid w-full grid-cols-1 justify-items-center gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-end sm:justify-items-stretch">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="63"
@@ -24,6 +27,7 @@ function Footer() {
           fill="none"
           id="Logo"
           aria-hidden="true"
+          className="justify-self-center sm:justify-self-start"
         >
           <g id="logogram">
             <path
@@ -32,12 +36,12 @@ function Footer() {
             />
           </g>
         </svg>
-          {/* <div className="footer-links"> 
+          <div className="footer-links my-2 flex flex-wrap items-center justify-center gap-3 sm:my-5 sm:justify-self-center">
           <Hyperlink url="https://example.com" linkText="Team" />
           <Hyperlink url="https://example.com" linkText="Case Studies" />
           <Hyperlink url="https://example.com" linkText="Publications" />
-        </div> */}
-        <div className="social-links show">
+        </div>
+        <div className="social-links flex flex-row items-center justify-self-center gap-3 sm:justify-self-end">
           <a
             href="https://linkedin.com"
             className="hyperlink linkedin-icon"
